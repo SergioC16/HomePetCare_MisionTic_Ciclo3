@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+	<script src="HomePetCare.App.Frontend/wwwroot/js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 3,
+				lazyLoad: true,
+				autoPlay: true,
+				pagination: true,
+			});
+		});
+	</script>
+}
+
+    <div class="text-center" id="home">
+		<div class="container">
+			<!-- header -->
+			<div class="header">
+				<div class="logo">
+					<h1>
+						<a href="index.html">
+							<img class="logo-img center-block" src="images/logo.png" alt="" width="120px"/>
+						</a>
+					</h1>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //header -->
+		</div>
+		<!-- Slider -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+						<div class="slider-img-w3layouts one">
+							<div class="w3l-overlay">
+								<div class="container">
+									<div class="banner-text-info">
+										<h3>Bienvenidos a 
+											<span>Home Pet Care</span> tu sitio de
+											<span>confianza</span> para tu gato</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img-w3layouts two">
+							<div class="w3l-overlay">
+								<div class="container">
+									<div class="banner-text-info">
+										<h3>Nos dedicamos al
+											<span>mejor</span> cuidado de tu
+											<span>gato</span>!</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img-w3layouts three">
+							<div class="w3l-overlay">
+								<div class="container">
+									<div class="banner-text-info">
+										<h3>Contamos con profesionales
+											<span>calificados</span> para el
+											<span>bienestar</span> de tu gato!</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--//Slider-->
+	
+	</div>
+	<!--//banner-->
